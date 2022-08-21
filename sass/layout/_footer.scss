@@ -208,7 +208,16 @@
 }
 
 .form-wrap {
-    display: flex;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {
+            margin-left: auto;
+            width: 570px;
+    }
 }
 
 .form-btn {
