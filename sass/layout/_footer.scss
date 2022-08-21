@@ -173,6 +173,11 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 450px;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        width: 570px;
+    }
 }
 
 .form-sign {
@@ -208,22 +213,20 @@
 }
 
 .form-wrap {
-    width: 100%;
+    width: 100%;    
 
     @media screen and (min-width: 1200px) {
-            display: flex;
-    }
-
-    @media screen and (min-width: 1200px) {
-            margin-left: auto;
-            width: 570px;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
+
 
 .form-btn {
     display: flex;
     padding: 0;
     width: 200px;
+    height: 50px;
     justify-content: center;
     align-items: center;
     font-weight: 700;
@@ -241,6 +244,17 @@
         background-color: var(--title-text-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+
+    @media screen and (max-width: 1199px) {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+
+    }
+
 }
 
 .icon-form {

@@ -1759,6 +1759,12 @@ img {
     width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .form {
+    margin-left: auto;
+    width: 570px;
+  }
+}
 
 .form-sign {
   margin-bottom: 20px;
@@ -1816,9 +1822,16 @@ img {
 }
 
 .form-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .form-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .form-btn {
@@ -1827,6 +1840,7 @@ img {
   display: flex;
   padding: 0;
   width: 200px;
+  height: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1852,6 +1866,17 @@ img {
   background-color: var(--title-text-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 1199px) {
+  .form-btn {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-btn {
+    margin-left: auto;
+  }
 }
 
 .icon-form {
