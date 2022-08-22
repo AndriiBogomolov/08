@@ -272,7 +272,7 @@ ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 94px 15px;
+  padding: 40px;
   overflow-y: scroll;
 }
 
@@ -280,6 +280,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 40px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -293,6 +294,7 @@ ul {
   min-height: 581px;
   background-color: var(--white-color);
   border-radius: 4px;
+  overflow: auto;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -352,13 +354,6 @@ ul {
 .modal-form {
   position: absolute;
   padding: 40px;
-  width: 100%;
-  height: 100%;
-}
-@media screen and (max-width: 479px) {
-  .modal-form {
-    padding: 20px;
-  }
 }
 
 .modal-form-title {
@@ -369,11 +364,18 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+  width: 370px;
+  height: 60px;
 }
 @media screen and (max-width: 479px) {
   .modal-form-title {
     text-align: left;
-    max-width: 240px;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .modal-form-title {
+    width: 448px;
+    height: 23px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -399,7 +401,7 @@ ul {
 
 .label-input {
   height: 40px;
-  width: 100%;
+  width: 370px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
@@ -410,6 +412,12 @@ ul {
 }
 .label-input:hover, .label-input:focus {
   border-color: var(--title-text-color);
+}
+@media screen and (min-width: 1200px) {
+  .label-input {
+    width: 448px;
+    hight: 40px;
+  }
 }
 
 .label-input:hover + .form-icon,
@@ -655,6 +663,7 @@ span {
   margin: 0;
   padding: 0;
   bottom: none;
+  margin-left: auto;
   background-color: transparent;
 }
 @media screen and (min-width: 768px) {
@@ -753,9 +762,15 @@ span {
   margin: 94px 200px;
 }
 
-.header {
+.header > .container {
   border-bottom: 1px solid #ECECEC;
   width: 100%;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .header > .container {
+    height: 80px;
+  }
 }
 
 .header .container {
