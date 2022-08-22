@@ -40,6 +40,7 @@
 
 .header {
     border-bottom: 1px solid #ECECEC;
+    width: 100%;
 }
 
 .header .container {
@@ -53,10 +54,14 @@
 }
 
 .header-connect {
-    display: block;
+    display: none;
     margin-left: auto;
     // align-items: center;
     // justify-content: center;
+    @media screen and (min-width: 768px) {
+        display: block;
+        
+    }
 }
 
 
